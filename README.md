@@ -19,6 +19,7 @@ Build a notes app as a front-end, single page web app. Using Javascript and foll
 __Development Environment__
 
 * Languages: Javascript
+* Framework: Node.js
 
 __Test Environment__
 
@@ -50,9 +51,12 @@ __Base install__
  * Navigate into the new directory using `cd Note`
 
 ## How to Run__
-__Launching the app__
+__Launching the server__
+Prerequisites: Node and npm installed.
+* node node_modules/http-server/bin/http-server
 
-* Open your browser and in the URL bar enter the path pointing to index.html. For example: `/Users/student/Desktop/Projects/Week-7/Note/index.html`
+__Launching the app__
+* Open your browser and browse the project at the URL in the console output.
 
 __Testing__
 
