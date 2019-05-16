@@ -4,7 +4,7 @@
   };
 
 
-  ListView.prototype.render = function () {
+  ListView.prototype.addHTML = function () {
     return '<ul>' +
     this.noteList.getArray().map(x => '<li><div>'+x+'</div></li>').join("") +
     '</ul>';

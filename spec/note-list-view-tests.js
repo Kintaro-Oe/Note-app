@@ -1,5 +1,5 @@
 //Describe, ListView
-//Describe, render(NoteList)
+//Describe, addHTML(NoteList)
 
 (function(exports) {
   function WithNoNotes(){
@@ -7,7 +7,7 @@
     var listView = new ListView(noteList);
 
     ////////EXPECTATION////////////
-    var testValue = listView.render()
+    var testValue = listView.addHTML()
     var expectation = '<ul></ul>'
     new Expect(testValue).toEqual(expectation)
 
@@ -26,7 +26,7 @@
 
 
     ////////EXPECTATION////////////
-    var testValue = listView.render()
+    var testValue = listView.addHTML()
     var expectation = '<ul><li><div>I am note 1</div></li></ul>'
     new Expect(testValue).toEqual(expectation)
 
@@ -49,7 +49,7 @@
 
 
     ////////EXPECTATION////////////
-    var testValue = listView.render()
+    var testValue = listView.addHTML()
     var expectation = '<ul><li><div>I am note 1</div></li><li><div>I am note 2</div></li><li><div>I am note 3</div></li></ul>'
     new Expect(testValue).toEqual(expectation)
 
